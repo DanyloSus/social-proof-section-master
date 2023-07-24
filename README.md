@@ -4,4 +4,4 @@ from *www.frontendmentor.io*
 
 - [x] Desktop Design
 - [x] Mobile Design
-- [ ] Animations
+- [x] Animations

@@ -5,9 +5,59 @@
 :root {
   --very-dark-magenta: hsl(300, 43%, 22%);
   --soft-pink: hsl(333, 80%, 67%);
+  --anim-elements-count: 7;
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
+}
+
+*.anim:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+*.anim:nth-child(2) {
+  animation-delay: 1s;
+}
+
+*.anim:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.anim {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.anim-left {
+  animation-name: anim-left;
+}
+.anim-bottom {
+  animation-name: anim-bottom;
+}
+
+@keyframes anim-left {
+  0% {
+    position: relative;
+    opacity: 0;
+    left: -20px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes anim-bottom {
+  0% {
+    position: relative;
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    bottom: 0;
+  }
 }/*# sourceMappingURL=index.css.map */

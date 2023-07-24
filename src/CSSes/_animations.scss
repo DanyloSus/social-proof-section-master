@@ -1,0 +1,42 @@
+@for $i from 1 through 3 {
+  *.anim:nth-child(#{$i}) {
+    animation-delay: #{#{calc($i / 2)}s};
+  }
+}
+.anim {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  &-left {
+    animation-name: anim-left;
+  }
+  &-bottom {
+    animation-name: anim-bottom;
+  }
+}
+
+@keyframes anim-left {
+  0% {
+    position: relative;
+    opacity: 0;
+    left: -20px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes anim-bottom {
+  0% {
+    position: relative;
+    opacity: 0;
+    bottom: -20px;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    bottom: 0;
+  }
+}

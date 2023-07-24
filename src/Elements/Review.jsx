@@ -2,8 +2,11 @@ import React from "react";
 
 function Review({ pos, img, username, text }) {
   return (
-    <div id="review" className={`h-full w-full flex items-${pos}`}>
-      <div className="lg:h-[80%] w-full bg-[--very-dark-magenta] text-[--light-grayish-magenta] rounded-xl flex-col px-8 lg:pt-10 py-6 overflow-y-auto">
+    <div
+      id="review"
+      className={`h-full w-full flex items-${pos} anim anim-bottom`}
+    >
+      <div className="lg:h-[80%] w-full bg-[--very-dark-magenta] text-[--light-grayish-magenta] rounded-xl flex-col px-8 lg:pt-10 py-6 overflow-y-auto ">
         <div id="data" className="flex items-center justify-start gap-5 mb-6 ">
           <img src={`./${img}`} alt={img} className=" w-12 rounded-full" />
           <div>
