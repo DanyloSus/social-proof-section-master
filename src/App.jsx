@@ -6,12 +6,12 @@ import Review from "./Elements/Review";
 function App() {
   return (
     <main className="h-screen w-screen">
-      <section className="grid grid-cols-2 grid-rows-[45%_55%] w-full h-full px-[165px] pb-[100px] pt-[116px] z-10 relative">
-        <div className="h-auto w-full text-left pr-32">
+      <section className="lg:grid grid-cols-2 grid-rows-[45%_55%] w-full h-full lg:px-[165px] lg:pb-[100px] lg:pt-[116px] px-[25px] py-[80px] z-10 relative flex flex-col text-center lg:text-left">
+        <div className="h-auto w-full lg:pr-32">
           <h1 className="text-[--very-dark-magenta] text-5xl font-bold mb-4 xl:text-7xl">
             10,000+ of our users love our products.
           </h1>
-          <p className="text-xl text-[--dark-grayish-magenta] overflow-y-auto">
+          <p className="lg:text-xl text-[--dark-grayish-magenta] overflow-y-auto text-lg">
             We only provide great products combined with excellent customer
             service. See what our satisfied customers are saying about our
             services.
@@ -24,7 +24,7 @@ function App() {
         </div>
         <div
           id="reviews"
-          className="h-full w-full col-span-2 flex items-center gap-5 pt-20"
+          className="h-full w-full flex items-center lg:gap-5 pt-20 lg:flex-row flex-col gap-4 col-span-2"
         >
           <Review
             pos="start"

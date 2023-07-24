@@ -5,9 +5,9 @@ function Rating({ text, pos }) {
     <div className={`flex items-center justify-${pos}`}>
       <div
         id="rating"
-        className="flex items-center justify-left bg-[--light-grayish-magenta] px-8 py-4 w-[80%]  rounded-xl overflow-x-auto"
+        className="flex items-center justify-left bg-[--light-grayish-magenta] px-8 py-4 lg:w-[80%]  rounded-xl overflow-x-auto w-full flex-col lg:flex-row"
       >
-        <div className="flex gap-2 mr-7">
+        <div className="flex gap-2 mr-7 lg:mb-0 mb-2">
           <img src="./icon-star.svg" alt="icon star" />
           <img src="./icon-star.svg" alt="icon star" />
           <img src="./icon-star.svg" alt="icon star" />
